@@ -2,17 +2,14 @@
 set -euo pipefail
 
 # ============================================================
-# FDI RAG QA Assistant — 一键部署脚本
-# 适用: Ubuntu 22.04 LTS
+# FDI RAG QA Assistant — Docker 一键部署脚本
+# 适用: Ubuntu 22.04 LTS / Debian 12+
 # 用法: chmod +x deploy.sh && sudo ./deploy.sh
 # ============================================================
 
 APP_DIR="/home/ubuntu/rag-qa-assistant"
-APP_USER="ubuntu"
-VENV_DIR="$APP_DIR/venv"
-GIT_REPO="https://github.com/YOUR_USERNAME/rag-qa-assistant.git"
+GIT_REPO="https://github.com/YZZHA/RAGQ-AAssistant.git"
 
-# 颜色
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
@@ -22,24 +19,29 @@ log()  { echo -e "${GREEN}[✓]${NC} $1"; }
 warn() { echo -e "${YELLOW}[!]${NC} $1"; }
 err()  { echo -e "${RED}[✗]${NC} $1"; exit 1; }
 
-# --------------------------------------------------
-# 1. 检查 root
-# --------------------------------------------------
 if [ "$EUID" -ne 0 ]; then
     err "请以 root 身份运行: sudo ./deploy.sh"
 fi
 
-log "开始部署 FDI RAG QA Assistant..."
+log "开始部署 FDI RAG QA Assistant (Docker)..."
 
 # --------------------------------------------------
-# 2. 系统依赖
+# 1. 安装 Docker
 # --------------------------------------------------
-log "安装系统依赖..."
-apt update -qq
-apt install -y -qq python3.11 python3.11-venv python3.11-dev nginx git curl 2>/dev/null
+log "安装 Docker..."
+if ! command -v docker &> /dev/null; then
+    curl -fsSL https://get.docker.com | sudo sh
+else
+    log "Docker 已安装"
+fi
+
+if ! getent group docker | grep -q "$SUDO_USER"; then
+    usermod -aG docker "$SUDO_USER"
+    warn "已将 $SUDO_USER 添加到 docker 组，请重新登录后生效"
+fi
 
 # --------------------------------------------------
-# 3. 克隆/更新项目
+# 2. 克隆/更新项目
 # --------------------------------------------------
 if [ -d "$APP_DIR" ]; then
     warn "项目目录已存在，执行 git pull..."
@@ -52,20 +54,7 @@ else
 fi
 
 # --------------------------------------------------
-# 4. Python 虚拟环境 + 依赖
-# --------------------------------------------------
-log "创建虚拟环境..."
-python3.11 -m venv "$VENV_DIR"
-source "$VENV_DIR/bin/activate"
-
-log "安装 Python 依赖..."
-pip install -q --upgrade pip
-pip install -q -r requirements.txt 2>/dev/null || pip install -q uvicorn fastapi pydantic-settings openai sentence-transformers jieba fakeredis pypdf python-docx
-
-deactivate
-
-# --------------------------------------------------
-# 5. .env 文件
+# 3. .env 文件
 # --------------------------------------------------
 if [ ! -f "$APP_DIR/.env" ]; then
     warn ".env 文件不存在，从 .env.example 复制，请手动填入 QWEN_API_KEY"
@@ -74,26 +63,7 @@ if [ ! -f "$APP_DIR/.env" ]; then
 fi
 
 # --------------------------------------------------
-# 6. 部署配置文件
-# --------------------------------------------------
-log "配置 Nginx..."
-cp "$APP_DIR/deploy/nginx.conf" /etc/nginx/sites-available/rag-qa
-ln -sf /etc/nginx/sites-available/rag-qa /etc/nginx/sites-enabled/
-rm -f /etc/nginx/sites-enabled/default
-nginx -t && systemctl restart nginx
-
-log "配置 Systemd 服务..."
-cp "$APP_DIR/deploy/rag-qa.service" /etc/systemd/system/rag-qa.service
-systemctl daemon-reload
-systemctl enable rag-qa
-
-# --------------------------------------------------
-# 7. 目录权限
-# --------------------------------------------------
-chown -R "$APP_USER:$APP_USER" "$APP_DIR"
-
-# --------------------------------------------------
-# 8. 创建 Swap（2GB，防止 OOM）
+# 4. 创建 Swap（2GB，防止 OOM）
 # --------------------------------------------------
 if ! swapon --show | grep -q /swapfile; then
     log "创建 2GB Swap..."
@@ -105,32 +75,41 @@ if ! swapon --show | grep -q /swapfile; then
 fi
 
 # --------------------------------------------------
-# 9. 启动服务
+# 5. 启动容器
 # --------------------------------------------------
-log "启动服务..."
-systemctl start rag-qa
+log "启动 Docker 容器..."
+cd "$APP_DIR"
+docker compose up -d
 
 # --------------------------------------------------
-# 10. 验证
+# 6. 验证
 # --------------------------------------------------
-sleep 3
-if systemctl is-active --quiet rag-qa; then
-    log "服务运行中"
+log "等待服务启动..."
+sleep 10
+
+if docker compose ps | grep -q "rag-qa-app.*running"; then
+    log "容器运行中"
 else
-    err "服务启动失败，查看日志: journalctl -u rag-qa -n 50"
+    err "容器启动失败，查看日志: docker compose logs -f"
 fi
 
 if curl -sf http://127.0.0.1/health > /dev/null 2>&1; then
     log "健康检查通过 ✅"
-    IP=$(curl -sf http://checkip.amazonaws.com 2>/dev/null || echo "获取公网 IP 失败")
+    IP=$(curl -sf http://checkip.amazonaws.com 2>/dev/null || hostname -I | awk '{print $1}')
     echo ""
     echo "============================================"
-    echo -e "  ${GREEN}部署完成!${NC}"
+    echo -e "  ${GREEN}Docker 部署完成!${NC}"
     echo "  访问地址: http://$IP"
     echo "  健康检查: http://$IP/health"
-    echo "  查看日志: journalctl -u rag-qa -f"
-    echo "  重启服务: sudo systemctl restart rag-qa"
+    echo "  查看日志: docker compose logs -f"
+    echo "  重启服务: docker compose restart"
+    echo "  停止服务: docker compose down"
+    echo ""
+    echo "  ${YELLOW}提示:${NC} 首次启动需要下载模型，约需 5-10 分钟"
+    echo "       可通过 docker compose logs -f 查看进度"
     echo "============================================"
 else
-    warn "健康检查失败，请手动排查: curl http://127.0.0.1/health"
+    warn "健康检查失败，容器可能还在启动中..."
+    warn "请等待几分钟后再试: curl http://127.0.0.1/health"
+    warn "或查看日志: docker compose logs -f"
 fi
