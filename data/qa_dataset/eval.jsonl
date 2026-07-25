@@ -1,0 +1,31 @@
+{"question": "跨境投资登记系统的项目登记编号格式是什么？", "relevant_docs": ["cross_border_registration"], "expected_answer": "项目登记编号格式为 FDI-YYYY-XXXXX，其中 YYYY 为年份，XXXXX 为 5 位数字顺序号。"}
+{"question": "跨境投资登记系统上传单个文件的大小限制是多少？", "relevant_docs": ["cross_border_registration"], "expected_answer": "单个文件限制为 50MB，单项目总材料不超过 500MB。"}
+{"question": "跨境投资登记系统支持哪三种登记类型？", "relevant_docs": ["cross_border_registration"], "expected_answer": "支持新建项目、历史项目补录、项目信息变更三种登记类型。"}
+{"question": "跨境投资登记系统的归档数据保留期限是多久？", "relevant_docs": ["cross_border_registration"], "expected_answer": "归档数据保留期限为 15 年。"}
+{"question": "外商投资企业设立审批分为哪几个阶段？", "relevant_docs": ["enterprise_establishment"], "expected_answer": "分为四个阶段：阶段一名称预先核准（1个工作日）、阶段二商务部门审批（5-7个工作日）、阶段三工商注册登记（3个工作日）、阶段四后续登记（5个工作日）。"}
+{"question": "外商投资企业设立审批的承诺办结时限是多少个工作日？", "relevant_docs": ["enterprise_establishment"], "expected_answer": "全部流程承诺办结时限为 15 个工作日，其中商务部门审批 5-7 个工作日为核心环节。"}
+{"question": "外商投资负面清单查询系统的数据更新频率是怎样的？", "relevant_docs": ["negative_list_query"], "expected_answer": "负面清单数据与国家政策同步更新，每年至少更新一次，重大政策调整时实时更新。数据版本号格式为 YYYY-VN。"}
+{"question": "负面清单查询中，标识为⚠️的结果类型代表什么含义？", "relevant_docs": ["negative_list_query"], "expected_answer": "⚠️ 表示限制类，即有条件开放，有股比或高管要求。"}
+{"question": "2024年外商投资负面清单中，增值电信业务的外资股比限制是多少？", "relevant_docs": ["negative_list_query"], "expected_answer": "增值电信业务外资股比不超过 50%，基础电信业务禁止外商投资。"}
+{"question": "外资项目跟踪管理系统将项目生命周期分为哪五个阶段？", "relevant_docs": ["project_tracking"], "expected_answer": "分为储备阶段、签约阶段、审批阶段、开工阶段、投产阶段五个阶段。"}
+{"question": "外资项目跟踪系统的项目跟踪编号格式是什么？", "relevant_docs": ["project_tracking"], "expected_answer": "格式为 PT-YYYY-XXXXX。"}
+{"question": "外资项目跟踪系统中，签约后多少天未进入审批阶段会触发预警？属于什么级别预警？", "relevant_docs": ["project_tracking"], "expected_answer": "签约后 90 天未进入审批阶段触发黄色预警。"}
+{"question": "外商投诉处理平台根据哪部法律设立？", "relevant_docs": ["complaint_platform"], "expected_answer": "根据《外商投资法》第二十六条规定设立。"}
+{"question": "外商投诉处理平台对投诉事项的处理时限是多少个工作日？", "relevant_docs": ["complaint_platform"], "expected_answer": "调查处理阶段为 15 个工作日，复杂事项可延长至 30 个工作日。结果反馈阶段为 3 个工作日。"}
+{"question": "外商投诉的时效是多久？", "relevant_docs": ["complaint_platform"], "expected_answer": "投诉人应当自知道或应当知道其权益受到损害之日起 1 年内提出投诉。"}
+{"question": "跨境资金流动监测系统有哪些预警级别？每个级别的触发条件是什么？", "relevant_docs": ["fund_monitoring"], "expected_answer": "三个级别：蓝色预警（单月资金流出同比增长超 50%）、黄色预警（连续 3 月资金净流出）、红色预警（资金异常外逃嫌疑）。"}
+{"question": "招商引资项目管理平台的项目线索评分规则是什么？", "relevant_docs": ["investment_promotion"], "expected_answer": "根据投资方背景、投资金额、项目可行性自动评分（1-5分），评分 ≥ 3 分自动转为正式项目。"}
+{"question": "招商引资项目管理平台的月度新增项目线索 KPI 是多少？", "relevant_docs": ["investment_promotion"], "expected_answer": "月度 KPI 为 ≥ 20 条/人。"}
+{"question": "外商投资企业年度报告的填报时间是什么时候？", "relevant_docs": ["annual_report"], "expected_answer": "每年 1 月 1 日至 6 月 30 日，报送上一年度报告。"}
+{"question": "外商投资企业逾期未报年度报告会有什么后果？", "relevant_docs": ["annual_report"], "expected_answer": "被列入经营异常名录，满 3 年未移出将被列入严重违法失信企业名单。"}
+{"question": "外资优惠政策查询系统的匹配度如何计算？", "relevant_docs": ["incentive_policy"], "expected_answer": "匹配度计算维度：行业匹配（40%）、地区匹配（30%）、规模匹配（20%）、时间匹配（10%）。"}
+{"question": "外资优惠政策查询系统的政策数据更新要求是什么？", "relevant_docs": ["incentive_policy"], "expected_answer": "由专职政策分析师负责维护，确保政策变动后 7 个工作日内完成更新。"}
+{"question": "外商一站式服务平台支持哪两种登录方式？", "relevant_docs": ["one_stop_service"], "expected_answer": "支持 CA 数字证书登录和手机验证码登录两种方式。"}
+{"question": "外商一站式服务平台的企业注册认证需要多长时间？", "relevant_docs": ["one_stop_service"], "expected_answer": "企业首次使用需注册认证，上传营业执照进行实名认证，1 个工作日内审核。"}
+{"question": "外商投资企业资本金结汇，单笔等值多少美元以上需要提供用途证明材料？", "relevant_docs": ["foreign_exchange_management"], "expected_answer": "单笔等值 5 万美元以上的结汇需提供用途证明材料。"}
+{"question": "外商投资企业利润汇出，年度累计汇出金额超过等值多少美元需要额外报备？", "relevant_docs": ["foreign_exchange_management"], "expected_answer": "年度累计汇出金额超过等值 50 万美元需额外报备。"}
+{"question": "外商投资企业外债合同签订后多少天内需办理外债签约登记？", "relevant_docs": ["foreign_exchange_management"], "expected_answer": "外债合同签订后 15 个工作日内办理外债签约登记。"}
+{"question": "根据外商投资产业投资指南，哪些地区类型适合集成电路和生物医药行业投资？", "relevant_docs": ["investment_guide"], "expected_answer": "长三角地区产业链最完整、人才密集，适合集成电路、生物医药、高端制造行业投资。"}
+{"question": "外商投资产业投资指南中，高新技术企业的企业所得税税率是多少？", "relevant_docs": ["investment_guide"], "expected_answer": "标准税率 25%，高新技术企业适用 15%，鼓励类项目在西部地区适用 15%。"}
+{"question": "跨境投资登记系统和外资项目跟踪管理系统分别生成什么编号？格式有何不同？", "relevant_docs": ["cross_border_registration", "project_tracking"], "expected_answer": "跨境投资登记系统生成项目登记编号，格式为 FDI-YYYY-XXXXX；外资项目跟踪管理系统生成项目跟踪编号，格式为 PT-YYYY-XXXXX。两者年份和序号格式相同，但前缀不同。"}
+{"question": "负面清单查询系统显示鼓励类、限制类、禁止类分别用什么标识？", "relevant_docs": ["negative_list_query"], "expected_answer": "鼓励类用 ✅ 标识、限制类用 ⚠️ 标识、禁止类用 ❌ 标识。"}

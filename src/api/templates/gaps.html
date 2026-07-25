@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>知识缺口管理 — FDI 问答助手</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body { background: #f5f7fa; padding: 20px; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  .badge-score-high { background: #198754; }
+  .badge-score-low { background: #dc3545; }
+  .badge-score-mid { background: #ffc107; color: #000; }
+  .gap-question { max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+      <h3 class="mb-1">📋 知识缺口管理</h3>
+      <small class="text-muted">知识库未覆盖的问题记录，自动或用户反馈触发</small>
+    </div>
+    <div>
+      <a href="/" class="btn btn-outline-primary btn-sm">← 返回问答</a>
+      <button class="btn btn-outline-danger btn-sm ms-2" onclick="clearGaps()">清空日志</button>
+    </div>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover bg-white">
+      <thead class="table-light">
+        <tr>
+          <th>#</th>
+          <th>问题</th>
+          <th>触发方式</th>
+          <th>分数</th>
+          <th>状态</th>
+          <th>时间</th>
+        </tr>
+      </thead>
+      <tbody id="gapTableBody">
+        <tr><td colspan="6" class="text-center text-muted">加载中...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="text-muted small" id="summary"></div>
+</div>
+
+<script>
+async function loadGaps() {
+  try {
+    const resp = await fetch('/api/gaps');
+    const data = await resp.json();
+    const tbody = document.getElementById('gapTableBody');
+    const summary = document.getElementById('summary');
+
+    if (data.gaps.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="6" class="text-center text-muted">暂无缺口记录</td></tr>';
+      summary.textContent = '共 0 条缺口记录';
+      return;
+    }
+
+    tbody.innerHTML = data.gaps.map((g, i) => {
+      const scoreClass = g.top_score >= 0.3 ? 'bg-success' : g.top_score > 0 ? 'bg-warning text-dark' : 'bg-danger';
+      const statusBadge = g.status === 'ingested' ? 'bg-success' : g.status === 'rejected' ? 'bg-danger' : 'bg-secondary';
+      const triggerLabel = g.trigger === 'user_feedback' ? '👤 用户反馈' : g.trigger === 'score_threshold' ? '🤖 自动检测' : g.trigger;
+      const time = new Date(g.created_at * 1000).toLocaleString();
+      return `<tr>
+        <td>${i + 1}</td>
+        <td class="gap-question" title="${g.question}">${g.question}</td>
+        <td>${triggerLabel}</td>
+        <td><span class="badge ${scoreClass}">${g.top_score}</span></td>
+        <td><span class="badge ${statusBadge}">${g.status || 'pending'}</span></td>
+        <td><small>${time}</small></td>
+      </tr>`;
+    }).join('');
+    summary.textContent = `共 ${data.gaps.length} 条缺口记录`;
+  } catch (e) {
+    document.getElementById('gapTableBody').innerHTML = '<tr><td colspan="6" class="text-center text-danger">加载失败</td></tr>';
+  }
+}
+
+async function clearGaps() {
+  if (!confirm('确定清空所有缺口日志？')) return;
+  await fetch('/api/gaps', { method: 'DELETE' });
+  loadGaps();
+}
+
+loadGaps();
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: rag-qa-app
+    restart: unless-stopped
+    ports:
+      - "80:8000"
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - REDIS_USE_FAKE=false
+      - HF_ENDPOINT=https://hf-mirror.com
+    env_file:
+      - .env
+    depends_on:
+      redis:
+        condition: service_healthy
+    networks:
+      - rag-network
+
+  redis:
+    container_name: rag-qa-redis
+    image: redis:7-alpine
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    networks:
+      - rag-network
+
+volumes:
+  redis_data:
+
+networks:
+  rag-network:
+    driver: bridge

@@ -1,0 +1,136 @@
+# ============================================================
+# Milvus Collection Schema
+# ============================================================
+milvus:
+  default_collection: fdi_knowledge_base
+
+  schema:
+    - name: chunk_id
+      type: VARCHAR
+      max_length: 64
+      is_primary: true
+      auto_id: false
+      description: 子 chunk 唯一 ID（格式：{doc_id}_{seq_no}）
+
+    - name: doc_id
+      type: VARCHAR
+      max_length: 64
+      description: 文档唯一 ID（文件名去掉后缀）
+
+    - name: doc_title
+      type: VARCHAR
+      max_length: 256
+      description: 文档标题
+
+    - name: parent_chunk_id
+      type: VARCHAR
+      max_length: 64
+      description: 父段落 ID，用于父子索引回溯；为空表示自身即为父段落
+
+    - name: content
+      type: VARCHAR
+      max_length: 8192
+      description: 文本原始内容
+
+    - name: tenant_id
+      type: VARCHAR
+      max_length: 64
+      description: 租户标识，用于多租户隔离过滤
+
+    - name: source_type
+      type: VARCHAR
+      max_length: 32
+      description: 来源文件类型（PDF / Word / MD / TXT）
+
+    - name: updated_at
+      type: INT64
+      description: 更新时间戳（Unix 秒级时间戳）
+
+    - name: version
+      type: VARCHAR
+      max_length: 32
+      description: 文档版本号
+
+    - name: dense_vector
+      type: FLOAT_VECTOR
+      dim: 384
+      description: 稠密向量，由 paraphrase-multilingual-MiniLM-L12-v2 生成
+
+    - name: heading_chain
+      type: VARCHAR
+      max_length: 512
+      description: 标题层级路径（JSON 数组），如 ["系统概述", "核心功能"]
+
+    - name: sparse_vector
+      type: SPARSE_FLOAT_VECTOR
+      description: 稀疏向量，用于 BM25 关键词匹配
+
+  indexes:
+    - field_name: dense_vector
+      index_type: IVF_FLAT
+      metric_type: IP
+      params:
+        nlist: 128
+
+    - field_name: sparse_vector
+      index_type: SPARSE_INVERTED_INDEX
+      metric_type: IP
+
+    - field_name: tenant_id
+      index_type: BITMAP
+      description: 租户字段位图索引，加速租户过滤
+
+# ============================================================
+# Redis Key 结构
+# ============================================================
+redis:
+  session_prefix: "session:{session_id}"
+  session_ttl: 3600
+  session_fields:
+    - key: history
+      type: list
+      ttl: true
+      description: 消息历史列表，每个元素为 JSON 字符串 {"role": "user|assistant", "content": "..."}
+
+    - key: metadata
+      type: hash
+      ttl: true
+      fields:
+        - name: tenant_id
+          type: string
+        - name: created_at
+          type: string
+        - name: last_active
+          type: string
+
+  cache_prefix: "cache:{query_hash_md5}"
+  cache_ttl: 300
+  cache_fields:
+    - key: question
+      type: string
+      description: 原始问题
+    - key: answer
+      type: string
+      description: LLM 生成的回答
+    - key: sources
+      type: string
+      description: 来源文档 JSON 数组
+    - key: created_at
+      type: integer
+      description: 缓存创建时间戳
+
+# ============================================================
+# 父子索引关联关系
+# ============================================================
+parent_child:
+  strategy: |
+    子 chunk（200-400 tokens）用于召回，保证精度；
+    父段落（800-1500 tokens）通过 parent_chunk_id 回溯，保证上下文完整。
+  storage: |
+    父子关系存储在 Milvus 同一 collection 的 parent_chunk_id 字段中。
+    子 chunk 的 parent_chunk_id 指向父段落的 chunk_id。
+    父段落自身的 parent_chunk_id 为空字符串。
+  lookup: |
+    检索命中子 chunk → 获取其 parent_chunk_id
+    → 以 parent_chunk_id 为过滤条件查询同一 collection
+    → 返回父段落内容送入 LLM

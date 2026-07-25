@@ -1,0 +1,44 @@
+[Unit]
+Description=FDI RAG QA Assistant
+Documentation=https://github.com/your-username/rag-qa-assistant
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/rag-qa-assistant
+
+# 启动命令（单 worker 省内存）
+ExecStart=/home/ubuntu/rag-qa-assistant/venv/bin/uvicorn \
+    src.api.routes:app \
+    --host 127.0.0.1 \
+    --port 8000 \
+    --workers 1 \
+    --loop asyncio \
+    --log-level info
+
+# 重启策略
+Restart=always
+RestartSec=5
+
+# 环境变量
+Environment=HF_ENDPOINT=https://hf-mirror.com
+Environment=DEEPEVAL_DISABLE_DOTENV=1
+
+# 安全
+PrivateTmp=true
+ProtectSystem=full
+NoNewPrivileges=true
+
+# 日志
+StandardOutput=journal
+StandardError=journal
+
+# 内存限制（防止 OOM 吞掉整个系统）
+MemoryMax=2G
+MemoryHigh=1.5G
+
+[Install]
+WantedBy=multi-user.target

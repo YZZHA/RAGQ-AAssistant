@@ -1,0 +1,1411 @@
+{
+  "chunk_cache_version": 1,
+  "doc_hashes": {
+    "annual_report": "f0b15ec11ca1c6c618a41c5d0125a60d",
+    "test_doc": "b5151843b1779edb8dab286e690497b4",
+    "complaint_platform": "37ac1e4410d772e44cc3fec5480b68f7",
+    "cross_border_registration": "0d8ec33f2889d1481e0c7f249ab0a8f6",
+    "doc": "24c1d6dc05d8e14b1196cffc469233f9",
+    "enterprise_establishment": "f27dd909e997da255d154769bd1674ae",
+    "foreign_exchange_management": "8b037793b0c8ea6f0d2b5dc9d5a96f06",
+    "fund_monitoring": "b238fcff2c004aabc96c6d1a704b0dc0",
+    "incentive_policy": "073b43b73ef08b48333bcbd65c81bbbf",
+    "investment_guide": "ff0eb1f12baf63d7526c2b9b76f5cb7c",
+    "investment_promotion": "68da3bbf007184614aad1b7125e3d5cb",
+    "negative_list_query": "fa5dae6f805914100bb77544ff8068e8",
+    "one_stop_service": "ca47241bcf18ac638e086d683224e46a",
+    "project_tracking": "7f6e518510dda061b77c9fa516e216ac"
+  },
+  "chunks": {
+    "annual_report": [
+      {
+        "heading_chain": [
+          "外商投资企业年度报告填报指南"
+        ],
+        "content": "根据《外商投资法》第三十四条规定，外商投资企业应当通过企业信用信息公示系统报送年度报告。",
+        "chunk_id": "annual_report_llm_001",
+        "doc_id": "annual_report",
+        "parent_chunk_id": "",
+        "char_count": 44,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资企业年度报告填报指南",
+          "填报主体"
+        ],
+        "content": "所有依法设立的外商投资企业，包括：中外合资经营企业、中外合作经营企业、外商独资企业、外商投资合伙企业、外商投资企业再投资设立的企业。",
+        "chunk_id": "annual_report_llm_002",
+        "doc_id": "annual_report",
+        "parent_chunk_id": "",
+        "char_count": 66,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资企业年度报告填报指南",
+          "填报时间"
+        ],
+        "content": "每年1月1日至6月30日，报送上一年度报告。",
+        "chunk_id": "annual_report_llm_003",
+        "doc_id": "annual_report",
+        "parent_chunk_id": "",
+        "char_count": 22,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资企业年度报告填报指南",
+          "填报内容",
+          "基本信息"
+        ],
+        "content": "企业名称、统一社会信用代码、注册地址；企业类型、经营状态、成立日期；联系方式。",
+        "chunk_id": "annual_report_llm_004",
+        "doc_id": "annual_report",
+        "parent_chunk_id": "",
+        "char_count": 39,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资企业年度报告填报指南",
+          "填报内容",
+          "经营情况"
+        ],
+        "content": "从业人数（平均人数）、营业收入（万元）、利润总额（万元）、纳税总额（万元）、资产总额（万元）、负债总额（万元）。",
+        "chunk_id": "annual_report_llm_005",
+        "doc_id": "annual_report",
+        "parent_chunk_id": "",
+        "char_count": 56,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资企业年度报告填报指南",
+          "填报内容",
+          "外商投资情况"
+        ],
+        "content": "外方股东实际出资额、外方股东出资比例、外商投资行业类别、外商投资来源国家/地区。",
+        "chunk_id": "annual_report_llm_006",
+        "doc_id": "annual_report",
+        "parent_chunk_id": "",
+        "char_count": 40,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资企业年度报告填报指南",
+          "填报内容",
+          "变更事项"
+        ],
+        "content": "股东变更情况、注册资本变更情况、经营范围变更情况、地址变更情况。",
+        "chunk_id": "annual_report_llm_007",
+        "doc_id": "annual_report",
+        "parent_chunk_id": "",
+        "char_count": 32,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资企业年度报告填报指南",
+          "填报流程"
+        ],
+        "content": "登录国家企业信用信息公示系统；选择\"年度报告填报\"；填写基本信息；填写经营数据；填写外资专项信息；提交并公示。",
+        "chunk_id": "annual_report_llm_008",
+        "doc_id": "annual_report",
+        "parent_chunk_id": "",
+        "char_count": 55,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资企业年度报告填报指南",
+          "注意事项"
+        ],
+        "content": "逾期未报将被列入经营异常名录；填报数据须真实、准确、完整；涉及商业秘密的数据可选择不公示；变更事项在年报中无需单独填报，但需在变更后30日内通过系统备案。",
+        "chunk_id": "annual_report_llm_009",
+        "doc_id": "annual_report",
+        "parent_chunk_id": "",
+        "char_count": 77,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资企业年度报告填报指南",
+          "常见问题"
+        ],
+        "content": "Q: 逾期未报会有什么后果？A: 被列入经营异常名录，满3年未移出将被列入严重违法失信企业名单。",
+        "chunk_id": "annual_report_llm_010",
+        "doc_id": "annual_report",
+        "parent_chunk_id": "",
+        "char_count": 48,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资企业年度报告填报指南",
+          "常见问题"
+        ],
+        "content": "Q: 经营数据是否可以全部不公示？A: 基本信息必须公示，经营数据可选择是否向社会公示，但必须向商务部门报送。",
+        "chunk_id": "annual_report_llm_011",
+        "doc_id": "annual_report",
+        "parent_chunk_id": "",
+        "char_count": 55,
+        "is_parent": true
+      }
+    ],
+    "test_doc": [
+      {
+        "heading_chain": [
+          "系统概览"
+        ],
+        "content": "内容一",
+        "chunk_id": "test_doc_llm_001",
+        "doc_id": "test_doc",
+        "parent_chunk_id": "",
+        "char_count": 3,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "系统概览",
+          "核心功能"
+        ],
+        "content": "内容二",
+        "chunk_id": "test_doc_llm_002",
+        "doc_id": "test_doc",
+        "parent_chunk_id": "",
+        "char_count": 3,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "系统概览",
+          "核心功能",
+          "项目登记"
+        ],
+        "content": "内容三",
+        "chunk_id": "test_doc_llm_003",
+        "doc_id": "test_doc",
+        "parent_chunk_id": "",
+        "char_count": 3,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "系统概览",
+          "核心功能",
+          "材料上传"
+        ],
+        "content": "内容四",
+        "chunk_id": "test_doc_llm_004",
+        "doc_id": "test_doc",
+        "parent_chunk_id": "",
+        "char_count": 3,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "系统概览",
+          "操作流程"
+        ],
+        "content": "内容五",
+        "chunk_id": "test_doc_llm_005",
+        "doc_id": "test_doc",
+        "parent_chunk_id": "",
+        "char_count": 3,
+        "is_parent": true
+      }
+    ],
+    "complaint_platform": [
+      {
+        "heading_chain": [
+          "外商投诉处理平台用户手册"
+        ],
+        "content": "外商投诉处理平台（Foreign Investor Complaint Platform, FICP）为外商投资企业提供投诉工单提交、跟踪、反馈的一站式渠道。依《外商投资法》第二十六条规定，外商投资者可对行政机关及其工作人员的行政行为提出投诉。",
+        "chunk_id": "complaint_platform_llm_001",
+        "doc_id": "complaint_platform",
+        "parent_chunk_id": "",
+        "char_count": 122,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投诉处理平台用户手册",
+          "投诉受理范围",
+          "可受理事项"
+        ],
+        "content": "- 行政机关未依法履行审批职责- 政策执行不一致或歧视性对待- 知识产权受到侵犯- 合同纠纷（涉及政府方）- 其他损害外商合法权益的行政行为",
+        "chunk_id": "complaint_platform_llm_002",
+        "doc_id": "complaint_platform",
+        "parent_chunk_id": "",
+        "char_count": 70,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投诉处理平台用户手册",
+          "投诉受理范围",
+          "不予受理事项"
+        ],
+        "content": "- 纯商业主体间的合同纠纷（建议通过司法途径解决）- 已进入行政复议或行政诉讼程序的事项- 投诉事项已由其他部门受理或办结",
+        "chunk_id": "complaint_platform_llm_003",
+        "doc_id": "complaint_platform",
+        "parent_chunk_id": "",
+        "char_count": 61,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投诉处理平台用户手册",
+          "投诉流程",
+          "步骤一：提交投诉（在线填报）"
+        ],
+        "content": "- 填写投诉人信息（企业名称、联系人、联系方式）- 选择被投诉部门和事项类别- 描述投诉事实和诉求（不少于100字）- 上传证据材料（限5个文件，每个20MB以内）",
+        "chunk_id": "complaint_platform_llm_004",
+        "doc_id": "complaint_platform",
+        "parent_chunk_id": "",
+        "char_count": 82,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投诉处理平台用户手册",
+          "投诉流程",
+          "步骤二：受理审核（2个工作日）"
+        ],
+        "content": "- 平台工作人员审核投诉是否符合受理条件- 符合条件 → 出具《受理通知书》，分配办理部门- 不符合条件 → 出具《不予受理通知书》，说明理由",
+        "chunk_id": "complaint_platform_llm_005",
+        "doc_id": "complaint_platform",
+        "parent_chunk_id": "",
+        "char_count": 71,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投诉处理平台用户手册",
+          "投诉流程",
+          "步骤三：调查处理（15个工作日）"
+        ],
+        "content": "- 被投诉部门在规定期限内作出答复- 必要时组织双方调解- 复杂事项可延长至30个工作日",
+        "chunk_id": "complaint_platform_llm_006",
+        "doc_id": "complaint_platform",
+        "parent_chunk_id": "",
+        "char_count": 44,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投诉处理平台用户手册",
+          "投诉流程",
+          "步骤四：结果反馈（3个工作日）"
+        ],
+        "content": "- 将处理结果书面送达投诉人- 投诉人可对结果进行满意度评价- 不满意可申请复核",
+        "chunk_id": "complaint_platform_llm_007",
+        "doc_id": "complaint_platform",
+        "parent_chunk_id": "",
+        "char_count": 40,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投诉处理平台用户手册",
+          "投诉时效"
+        ],
+        "content": "投诉人应当自知道或应当知道其权益受到损害之日起1年内提出投诉。",
+        "chunk_id": "complaint_platform_llm_008",
+        "doc_id": "complaint_platform",
+        "parent_chunk_id": "",
+        "char_count": 31,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投诉处理平台用户手册",
+          "保密机制"
+        ],
+        "content": "投诉人信息、投诉内容在处理过程中严格保密，未经投诉人同意不得向被投诉部门以外的第三方披露。",
+        "chunk_id": "complaint_platform_llm_009",
+        "doc_id": "complaint_platform",
+        "parent_chunk_id": "",
+        "char_count": 45,
+        "is_parent": true
+      }
+    ],
+    "cross_border_registration": [
+      {
+        "heading_chain": [
+          "跨境投资登记系统使用指南"
+        ],
+        "content": "跨境投资登记系统（Cross-Border Investment Registration System, CBIRS）是FDI部门核心业务系统之一，用于外商投资项目的在线登记、审核与跟踪管理。系统支持外商直接投资（FDI）和对外直接投资（ODI）两类业务的登记流程。",
+        "chunk_id": "cross_border_registration_llm_001",
+        "doc_id": "cross_border_registration",
+        "parent_chunk_id": "",
+        "char_count": 134,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "跨境投资登记系统使用指南",
+          "核心功能",
+          "1. 项目登记"
+        ],
+        "content": "外商投资项目初始信息录入，包括投资方信息、项目名称、投资金额、行业分类、投资方式等。支持新建项目、历史项目补录、项目信息变更三种登记类型。系统自动生成唯一的项目登记编号（格式：FDI-YYYY-XXXXX）。",
+        "chunk_id": "cross_border_registration_llm_002",
+        "doc_id": "cross_border_registration",
+        "parent_chunk_id": "",
+        "char_count": 104,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "跨境投资登记系统使用指南",
+          "核心功能",
+          "2. 材料上传"
+        ],
+        "content": "支持上传 PDF、Word、图片等格式的申请材料。单个文件限制 50MB，单项目总材料不超过 500MB。关键材料清单：投资方营业执照、项目可行性报告、资金来源证明、投资协议草案。",
+        "chunk_id": "cross_border_registration_llm_003",
+        "doc_id": "cross_border_registration",
+        "parent_chunk_id": "",
+        "char_count": 90,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "跨境投资登记系统使用指南",
+          "核心功能",
+          "3. 进度查询"
+        ],
+        "content": "实时查看项目审核进度，包括当前审核节点、审核人员、预计办结时间。支持邮件和短信通知功能，关键节点变更时自动推送。",
+        "chunk_id": "cross_border_registration_llm_004",
+        "doc_id": "cross_border_registration",
+        "parent_chunk_id": "",
+        "char_count": 56,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "跨境投资登记系统使用指南",
+          "核心功能",
+          "4. 历史归档"
+        ],
+        "content": "已完成项目自动归档至历史数据库。支持按项目编号、投资方名称、登记日期等多维度检索。归档数据保留期限为15年。",
+        "chunk_id": "cross_border_registration_llm_005",
+        "doc_id": "cross_border_registration",
+        "parent_chunk_id": "",
+        "char_count": 54,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "跨境投资登记系统使用指南",
+          "操作流程"
+        ],
+        "content": "1. 登录系统 → 2. 填写项目信息 → 3. 上传附件材料 → 4. 提交审核 → 5. 跟踪进度 → 6. 获取登记凭证。",
+        "chunk_id": "cross_border_registration_llm_006",
+        "doc_id": "cross_border_registration",
+        "parent_chunk_id": "",
+        "char_count": 64,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "跨境投资登记系统使用指南",
+          "常见问题"
+        ],
+        "content": "Q: 项目登记编号的格式是什么？A: FDI-YYYY-XXXXX，其中YYYY为年份，XXXXX为5位数字顺序号。",
+        "chunk_id": "cross_border_registration_llm_007",
+        "doc_id": "cross_border_registration",
+        "parent_chunk_id": "",
+        "char_count": 58,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "跨境投资登记系统使用指南",
+          "常见问题"
+        ],
+        "content": "Q: 上传材料有格式要求吗？A: 支持PDF、Word、图片格式，单个文件不超过50MB。",
+        "chunk_id": "cross_border_registration_llm_008",
+        "doc_id": "cross_border_registration",
+        "parent_chunk_id": "",
+        "char_count": 45,
+        "is_parent": true
+      }
+    ],
+    "doc": [
+      {
+        "heading_chain": [
+          "H1"
+        ],
+        "content": "LLM chunk",
+        "chunk_id": "doc_llm_001",
+        "doc_id": "doc",
+        "parent_chunk_id": "",
+        "char_count": 9,
+        "is_parent": true
+      }
+    ],
+    "enterprise_establishment": [
+      {
+        "heading_chain": [
+          "外商投资企业设立审批流程"
+        ],
+        "content": "本系统覆盖外商投资企业设立、变更、注销全流程审批业务，适用于中外合资企业、外商独资企业、外商投资合伙企业三种企业类型。",
+        "chunk_id": "enterprise_establishment_llm_001",
+        "doc_id": "enterprise_establishment",
+        "parent_chunk_id": "",
+        "char_count": 59,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资企业设立审批流程",
+          "设立条件",
+          "基本条件"
+        ],
+        "content": "1. 符合《外商投资法》及配套法规要求 2. 不属于外商投资准入负面清单禁止领域 3. 投资方具有合法主体资格 4. 注册资本满足行业最低要求",
+        "chunk_id": "enterprise_establishment_llm_002",
+        "doc_id": "enterprise_establishment",
+        "parent_chunk_id": "",
+        "char_count": 71,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资企业设立审批流程",
+          "设立条件",
+          "负面清单管理"
+        ],
+        "content": "- 鼓励类：享受优惠政策，自动备案 - 限制类：需进行许可审批，有股比限制 - 禁止类：不得投资",
+        "chunk_id": "enterprise_establishment_llm_003",
+        "doc_id": "enterprise_establishment",
+        "parent_chunk_id": "",
+        "char_count": 48,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资企业设立审批流程",
+          "审批流程",
+          "阶段一：名称预先核准（1个工作日）"
+        ],
+        "content": "- 提交3-5个备选企业名称 - 系统自动查重，通过后发放《名称预先核准通知书》",
+        "chunk_id": "enterprise_establishment_llm_004",
+        "doc_id": "enterprise_establishment",
+        "parent_chunk_id": "",
+        "char_count": 40,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资企业设立审批流程",
+          "审批流程",
+          "阶段二：商务部门审批（5-7个工作日）"
+        ],
+        "content": "- 提交设立申请材料 - 材料审核包括：投资协议、公司章程、董事会成员名单 - 通过后发放《外商投资企业批准证书》",
+        "chunk_id": "enterprise_establishment_llm_005",
+        "doc_id": "enterprise_establishment",
+        "parent_chunk_id": "",
+        "char_count": 57,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资企业设立审批流程",
+          "审批流程",
+          "阶段三：工商注册登记（3个工作日）"
+        ],
+        "content": "- 凭批准证书办理营业执照 - 确定经营范围、注册资本、注册地址",
+        "chunk_id": "enterprise_establishment_llm_006",
+        "doc_id": "enterprise_establishment",
+        "parent_chunk_id": "",
+        "char_count": 32,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资企业设立审批流程",
+          "审批流程",
+          "阶段四：后续登记（5个工作日）"
+        ],
+        "content": "- 税务登记（1个工作日） - 外汇登记（1个工作日） - 银行开户（1个工作日） - 海关登记（2个工作日，如涉及进出口业务）",
+        "chunk_id": "enterprise_establishment_llm_007",
+        "doc_id": "enterprise_establishment",
+        "parent_chunk_id": "",
+        "char_count": 64,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资企业设立审批流程",
+          "所需材料清单"
+        ],
+        "content": "1. 设立申请表（系统生成） 2. 投资方营业执照或身份证明 3. 投资协议（正本） 4. 公司章程（中英文版本） 5. 董事会成员名单及身份证明 6. 注册地址证明 7. 项目可行性研究报告 8. 资金来源证明",
+        "chunk_id": "enterprise_establishment_llm_008",
+        "doc_id": "enterprise_establishment",
+        "parent_chunk_id": "",
+        "char_count": 106,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资企业设立审批流程",
+          "承诺办结时限"
+        ],
+        "content": "全部流程承诺办结时限为15个工作日，其中商务部门审批5-7个工作日为核心环节。",
+        "chunk_id": "enterprise_establishment_llm_009",
+        "doc_id": "enterprise_establishment",
+        "parent_chunk_id": "",
+        "char_count": 39,
+        "is_parent": true
+      }
+    ],
+    "foreign_exchange_management": [
+      {
+        "heading_chain": [
+          "跨境资金汇兑与利润汇出管理指引"
+        ],
+        "content": "本指引适用于外商投资企业办理跨境资金汇兑和利润汇出业务，包括资本金结汇、利润汇出、外债提款等外汇管理事项。",
+        "chunk_id": "foreign_exchange_management_llm_001",
+        "doc_id": "foreign_exchange_management",
+        "parent_chunk_id": "",
+        "char_count": 53,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "跨境资金汇兑与利润汇出管理指引",
+          "资本金结汇",
+          "基本规则"
+        ],
+        "content": "- 外商投资企业资本金可按需结汇（意愿结汇制）- 结汇所得人民币须在境内使用，不得用于证券投资或购房（限制类用途）- 单笔等值5万美元以上的结汇需提供用途证明材料",
+        "chunk_id": "foreign_exchange_management_llm_002",
+        "doc_id": "foreign_exchange_management",
+        "parent_chunk_id": "",
+        "char_count": 81,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "跨境资金汇兑与利润汇出管理指引",
+          "资本金结汇",
+          "所需材料"
+        ],
+        "content": "1. 结汇申请书2. 营业执照（验原件）3. 外商投资企业备案证明4. 资本金入账登记凭证5. 用途证明材料（如采购合同、发票）",
+        "chunk_id": "foreign_exchange_management_llm_003",
+        "doc_id": "foreign_exchange_management",
+        "parent_chunk_id": "",
+        "char_count": 64,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "跨境资金汇兑与利润汇出管理指引",
+          "利润汇出",
+          "基本规则"
+        ],
+        "content": "- 依法缴纳企业所得税后的利润可自由汇出- 需提供审计报告证明利润真实性和合法性- 年度累计汇出金额超过等值50万美元需额外报备",
+        "chunk_id": "foreign_exchange_management_llm_004",
+        "doc_id": "foreign_exchange_management",
+        "parent_chunk_id": "",
+        "char_count": 64,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "跨境资金汇兑与利润汇出管理指引",
+          "利润汇出",
+          "所需材料"
+        ],
+        "content": "1. 董事会利润分配决议2. 年度审计报告3. 企业所得税完税证明4. 利润汇出申请表5. 外汇登记凭证",
+        "chunk_id": "foreign_exchange_management_llm_005",
+        "doc_id": "foreign_exchange_management",
+        "parent_chunk_id": "",
+        "char_count": 52,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "跨境资金汇兑与利润汇出管理指引",
+          "外债管理",
+          "外债额度"
+        ],
+        "content": "- 外商投资企业可借入外债，额度上限为\"投注差\"（投资总额与注册资本之差）- 企业可选择\"宏观审慎模式\"按净资产的一定倍数计算外债额度- 两种模式任选其一，选定后一年内不得变更",
+        "chunk_id": "foreign_exchange_management_llm_006",
+        "doc_id": "foreign_exchange_management",
+        "parent_chunk_id": "",
+        "char_count": 88,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "跨境资金汇兑与利润汇出管理指引",
+          "外债管理",
+          "登记要求"
+        ],
+        "content": "- 外债合同签订后15个工作日内办理外债签约登记- 外债提款后5个工作日内办理外债提款登记- 外债还本付息后5个工作日内办理外债注销登记",
+        "chunk_id": "foreign_exchange_management_llm_007",
+        "doc_id": "foreign_exchange_management",
+        "parent_chunk_id": "",
+        "char_count": 68,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "跨境资金汇兑与利润汇出管理指引",
+          "罚则"
+        ],
+        "content": "- 未经登记擅自汇出利润：责令改正，处违规金额5%-30%罚款- 虚假材料骗取结汇：撤销许可，3年内不得再申请",
+        "chunk_id": "foreign_exchange_management_llm_008",
+        "doc_id": "foreign_exchange_management",
+        "parent_chunk_id": "",
+        "char_count": 55,
+        "is_parent": true
+      }
+    ],
+    "fund_monitoring": [
+      {
+        "heading_chain": [
+          "# 跨境资金流动监测系统简介"
+        ],
+        "content": "跨境资金流动监测系统（Cross-border Capital Flow Monitoring System, CCFMS）用于实时监测和分析跨境资金流动情况，服务于FDI部门的资本项目管理、外汇管理及金融风险预警。",
+        "chunk_id": "fund_monitoring_llm_001",
+        "doc_id": "fund_monitoring",
+        "parent_chunk_id": "",
+        "char_count": 108,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "## 核心监控指标",
+          "### 1. 资金流入监测"
+        ],
+        "content": "- FDI实际到资金额（月度/季度/年度）- ODI资金汇出金额- 外资企业利润汇出金额- 跨境股权投资金额",
+        "chunk_id": "fund_monitoring_llm_002",
+        "doc_id": "fund_monitoring",
+        "parent_chunk_id": "",
+        "char_count": 54,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "## 核心监控指标",
+          "### 2. 行业分布分析"
+        ],
+        "content": "- 按国民经济行业分类统计资金流向- 制造业、服务业、高科技产业等分类对比- 重点行业资金集中度分析",
+        "chunk_id": "fund_monitoring_llm_003",
+        "doc_id": "fund_monitoring",
+        "parent_chunk_id": "",
+        "char_count": 50,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "## 核心监控指标",
+          "### 3. 地区分布统计"
+        ],
+        "content": "- 全国各省份外资流入排名- 自贸试验区 vs 非自贸区对比- 重点开发区域资金吸引力评估",
+        "chunk_id": "fund_monitoring_llm_004",
+        "doc_id": "fund_monitoring",
+        "parent_chunk_id": "",
+        "char_count": 45,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "## 核心监控指标",
+          "### 4. 预警阈值设置"
+        ],
+        "content": "| 预警级别 | 指标变化 | 触发动作 ||----------|----------|----------|| 蓝色预警 | 单月资金流出同比增长超50% | 系统通知监测人员 || 黄色预警 | 连续3月资金净流出 | 生成分析报告 || 红色预警 | 资金异常外逃嫌疑 | 启动应急会商机制 |",
+        "chunk_id": "fund_monitoring_llm_005",
+        "doc_id": "fund_monitoring",
+        "parent_chunk_id": "",
+        "char_count": 151,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "## 数据来源"
+        ],
+        "content": "1. 外汇管理局数据接口（实时同步）2. 商业银行跨境收支数据（T+1更新）3. 海关进出口数据（每日更新）4. 国家统计局公开数据（月度更新）",
+        "chunk_id": "fund_monitoring_llm_006",
+        "doc_id": "fund_monitoring",
+        "parent_chunk_id": "",
+        "char_count": 72,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "## 报表生成"
+        ],
+        "content": "系统支持自动生成以下报表：- 《跨境资金流动月度监测报告》- 《FDI资金到位情况季度分析》- 《外资企业利润汇出专项报告》- 《异常资金流动预警报告》",
+        "chunk_id": "fund_monitoring_llm_007",
+        "doc_id": "fund_monitoring",
+        "parent_chunk_id": "",
+        "char_count": 76,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "## 权限分级"
+        ],
+        "content": "- 普通监测员：查看数据和报表- 分析师：创建自定义分析模型- 管理员：配置预警阈值和管理用户",
+        "chunk_id": "fund_monitoring_llm_008",
+        "doc_id": "fund_monitoring",
+        "parent_chunk_id": "",
+        "char_count": 47,
+        "is_parent": true
+      }
+    ],
+    "incentive_policy": [
+      {
+        "heading_chain": [
+          "外资优惠政策查询系统功能说明"
+        ],
+        "content": "外资优惠政策查询系统（Incentive Policy Query System, IPQS）整合国家、省、市三级外资优惠政策，支持按行业、地区、投资规模等多维度检索匹配，为外商投资企业提供精准的政策推荐服务。",
+        "chunk_id": "incentive_policy_llm_001",
+        "doc_id": "incentive_policy",
+        "parent_chunk_id": "",
+        "char_count": 105,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外资优惠政策查询系统功能说明",
+          "政策分类",
+          "按层级分类"
+        ],
+        "content": "- **国家级政策**：企业所得税优惠（两免三减半）、关税减免、进口设备免税- **省级政策**：土地使用税返还、人才引进补贴、研发费用加计扣除- **市级/区级政策**：办公租金补贴、高管个税返还、一次性落户奖励",
+        "chunk_id": "incentive_policy_llm_002",
+        "doc_id": "incentive_policy",
+        "parent_chunk_id": "",
+        "char_count": 107,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外资优惠政策查询系统功能说明",
+          "政策分类",
+          "按类型分类"
+        ],
+        "content": "- 财政税收类：减免税、财政返还- 土地用房类：土地出让优惠、标准厂房租金减免- 人才补贴类：安家费、住房补贴、子女教育- 研发创新类：研发资助、专利奖励、高新技术企业认定奖励",
+        "chunk_id": "incentive_policy_llm_003",
+        "doc_id": "incentive_policy",
+        "parent_chunk_id": "",
+        "char_count": 88,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外资优惠政策查询系统功能说明",
+          "智能匹配引擎"
+        ],
+        "content": "系统根据企业画像自动匹配适用政策：- 输入：投资行业、投资金额、注册地区、企业类型、预计用工人数- 输出：匹配度排序的政策列表（含预估优惠金额）- 匹配度计算维度：行业匹配（40%）、地区匹配（30%）、规模匹配（20%）、时间匹配（10%）",
+        "chunk_id": "incentive_policy_llm_004",
+        "doc_id": "incentive_policy",
+        "parent_chunk_id": "",
+        "char_count": 121,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外资优惠政策查询系统功能说明",
+          "政策时效管理"
+        ],
+        "content": "- 每项政策标注有效期、发布部门、适用对象- 到期前30天自动提醒相关经办人员- 废止政策自动归档，不再出现在主动推荐中",
+        "chunk_id": "incentive_policy_llm_005",
+        "doc_id": "incentive_policy",
+        "parent_chunk_id": "",
+        "char_count": 60,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外资优惠政策查询系统功能说明",
+          "政策对比与收藏"
+        ],
+        "content": "- 支持同时对比最多5项政策- 用户可收藏常用政策- 可生成《政策适用性分析报告》（PDF格式）",
+        "chunk_id": "incentive_policy_llm_006",
+        "doc_id": "incentive_policy",
+        "parent_chunk_id": "",
+        "char_count": 48,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外资优惠政策查询系统功能说明",
+          "数据更新"
+        ],
+        "content": "由专职政策分析师负责维护，确保政策变动后7个工作日内完成更新。",
+        "chunk_id": "incentive_policy_llm_007",
+        "doc_id": "incentive_policy",
+        "parent_chunk_id": "",
+        "char_count": 31,
+        "is_parent": true
+      }
+    ],
+    "investment_guide": [
+      {
+        "heading_chain": [
+          "外商投资产业投资指南"
+        ],
+        "content": "根据《鼓励外商投资产业目录（2024年版）》，我国优先鼓励外资投向以下领域：",
+        "chunk_id": "investment_guide_llm_001",
+        "doc_id": "investment_guide",
+        "parent_chunk_id": "",
+        "char_count": 38,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资产业投资指南",
+          "产业投资导向",
+          "一、高技术制造业"
+        ],
+        "content": "1. 集成电路设计与制造 2. 高端医疗器械研发生产 3. 新能源汽车零部件 4. 人工智能基础软硬件 5. 航空航天材料",
+        "chunk_id": "investment_guide_llm_002",
+        "doc_id": "investment_guide",
+        "parent_chunk_id": "",
+        "char_count": 61,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资产业投资指南",
+          "产业投资导向",
+          "二、现代服务业"
+        ],
+        "content": "1. 科技研发服务（合同研发组织、中试平台） 2. 信息技术服务（云计算、大数据、区块链） 3. 商务咨询服务（管理咨询、投资咨询） 4. 现代物流（智能仓储、跨境物流）",
+        "chunk_id": "investment_guide_llm_003",
+        "doc_id": "investment_guide",
+        "parent_chunk_id": "",
+        "char_count": 85,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资产业投资指南",
+          "产业投资导向",
+          "三、绿色低碳产业"
+        ],
+        "content": "1. 新能源（光伏、风电、氢能） 2. 节能环保技术与装备 3. 碳捕集利用与封存（CCUS） 4. 绿色建筑与建材",
+        "chunk_id": "investment_guide_llm_004",
+        "doc_id": "investment_guide",
+        "parent_chunk_id": "",
+        "char_count": 58,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资产业投资指南",
+          "产业投资导向",
+          "四、现代农业"
+        ],
+        "content": "1. 智慧农业技术 2. 优良品种育种 3. 农产品精深加工 4. 生态循环农业",
+        "chunk_id": "investment_guide_llm_005",
+        "doc_id": "investment_guide",
+        "parent_chunk_id": "",
+        "char_count": 40,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资产业投资指南",
+          "投资地区选择建议"
+        ],
+        "content": "| 地区类型 | 优势 | 适合行业 | |----------|------|----------| | 长三角 | 产业链最完整、人才密集 | 集成电路、生物医药、高端制造 | | 粤港澳大湾区 | 国际化程度高、金融开放 | 金融科技、跨境电商、现代服务 | | 京津冀 | 政策优势、科研院所集中 | 人工智能、航空航天、数字经济 | | 成渝双城 | 成本优势、向西开放枢纽 | 电子信息、汽车制造、食品加工 | | 自贸试验区 | 制度创新、贸易自由便利 | 总部经济、离岸贸易、研发中心 |",
+        "chunk_id": "investment_guide_llm_006",
+        "doc_id": "investment_guide",
+        "parent_chunk_id": "",
+        "char_count": 252,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资产业投资指南",
+          "投资方式说明",
+          "绿地投资（新建企业）"
+        ],
+        "content": "- 优点：完全控制权，自主选址 - 周期：6-12个月完成设立 - 适用：制造业、基础设施建设",
+        "chunk_id": "investment_guide_llm_007",
+        "doc_id": "investment_guide",
+        "parent_chunk_id": "",
+        "char_count": 47,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资产业投资指南",
+          "投资方式说明",
+          "并购投资"
+        ],
+        "content": "- 优点：快速进入市场，获取现成团队 - 需完成反垄断审查和国家安全审查 - 适用：服务业、高科技行业",
+        "chunk_id": "investment_guide_llm_008",
+        "doc_id": "investment_guide",
+        "parent_chunk_id": "",
+        "char_count": 51,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资产业投资指南",
+          "投资方式说明",
+          "合资经营"
+        ],
+        "content": "- 优点：利用中方合作伙伴资源 - 股比限制按负面清单执行 - 适用：限制类行业（如增值电信）",
+        "chunk_id": "investment_guide_llm_009",
+        "doc_id": "investment_guide",
+        "parent_chunk_id": "",
+        "char_count": 47,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资产业投资指南",
+          "投资成本参考"
+        ],
+        "content": "- 工业用地价格：30-80万元/亩（地区差异大） - 工业用电：0.5-0.8元/度 - 制造业平均工资：5000-10000元/月 - 企业所得税：标准税率25%，高新企业15%，鼓励类项目西部15%",
+        "chunk_id": "investment_guide_llm_010",
+        "doc_id": "investment_guide",
+        "parent_chunk_id": "",
+        "char_count": 102,
+        "is_parent": true
+      }
+    ],
+    "investment_promotion": [
+      {
+        "heading_chain": [
+          "# 招商引资项目管理平台使用说明"
+        ],
+        "content": "招商引资项目管理平台（Investment Promotion Platform, IPP）是FDI部门开展招商引资工作的核心工具，支持从项目线索获取到落地服务的全过程管理，帮助招商团队高效推进项目。",
+        "chunk_id": "investment_promotion_llm_001",
+        "doc_id": "investment_promotion",
+        "parent_chunk_id": "",
+        "char_count": 100,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "## 功能模块",
+          "### 1. 项目线索管理"
+        ],
+        "content": "线索来源：展会、中介机构、投资方主动联系、上级部门分派。线索登记：记录投资方基本信息、投资意向、联系方式、来源渠道。线索评分：根据投资方背景、投资金额、项目可行性自动评分（1-5分）。线索转项目：评分≥3分自动转为正式项目。",
+        "chunk_id": "investment_promotion_llm_002",
+        "doc_id": "investment_promotion",
+        "parent_chunk_id": "",
+        "char_count": 112,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "## 功能模块",
+          "### 2. 招商活动管理"
+        ],
+        "content": "活动创建：举办招商推介会、投资洽谈会。参会企业管理：邀请函发送、签到确认、意向收集。活动效果评估：签约金额、意向项目数。",
+        "chunk_id": "investment_promotion_llm_003",
+        "doc_id": "investment_promotion",
+        "parent_chunk_id": "",
+        "char_count": 60,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "## 功能模块",
+          "### 3. 项目库管理"
+        ],
+        "content": "重点项目库：投资额1亿美元以上项目。在谈项目库：已接洽但未签约。签约项目库：已完成签约。落地项目库：已开工建设或投产。",
+        "chunk_id": "investment_promotion_llm_004",
+        "doc_id": "investment_promotion",
+        "parent_chunk_id": "",
+        "char_count": 59,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "## 功能模块",
+          "### 4. 竞争力分析"
+        ],
+        "content": "与周边地区政策对比（税收优惠、用地政策、人才补贴）。本地区优势分析（基础设施、产业链配套、人才储备）。生成竞争力分析报告（PDF格式）。",
+        "chunk_id": "investment_promotion_llm_005",
+        "doc_id": "investment_promotion",
+        "parent_chunk_id": "",
+        "char_count": 68,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "## 考核指标"
+        ],
+        "content": "新增项目线索数（月度KPI：≥20条/人）。签约转化率（目标：≥25%）。项目落地率（签约后12个月内开工率，目标：≥60%）。实际利用外资金额（年度目标）。",
+        "chunk_id": "investment_promotion_llm_006",
+        "doc_id": "investment_promotion",
+        "parent_chunk_id": "",
+        "char_count": 79,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "## 数据导出"
+        ],
+        "content": "支持导出Excel和CSV格式，可定制导出字段。",
+        "chunk_id": "investment_promotion_llm_007",
+        "doc_id": "investment_promotion",
+        "parent_chunk_id": "",
+        "char_count": 24,
+        "is_parent": true
+      }
+    ],
+    "negative_list_query": [
+      {
+        "heading_chain": [
+          "外商投资负面清单查询系统操作手册"
+        ],
+        "content": "外商投资负面清单查询系统（Negative List Query System, NLQS）提供实时查询各行业、各地区外商投资准入限制的功能。系统与国家发改委、商务部发布的《外商投资准入特别管理措施（负面清单）》实时同步。",
+        "chunk_id": "negative_list_query_llm_001",
+        "doc_id": "negative_list_query",
+        "parent_chunk_id": "",
+        "char_count": 111,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资负面清单查询系统操作手册",
+          "数据更新"
+        ],
+        "content": "- 负面清单数据与国家政策同步更新- 每年至少更新一次，重大政策调整实时更新- 数据版本号格式：YYYY-VN（如2024-V2表示2024年第二版）",
+        "chunk_id": "negative_list_query_llm_002",
+        "doc_id": "negative_list_query",
+        "parent_chunk_id": "",
+        "char_count": 75,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资负面清单查询系统操作手册",
+          "查询方式"
+        ],
+        "content": "### 方式一：行业分类查询- 按《国民经济行业分类》（GB/T 4754-2024）代码查询- 支持行业大类（门类）、中类（大类）、小类三级查询- 示例：查询\"信息传输、软件和信息技术服务业\"",
+        "chunk_id": "negative_list_query_llm_003",
+        "doc_id": "negative_list_query",
+        "parent_chunk_id": "",
+        "char_count": 97,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资负面清单查询系统操作手册",
+          "查询方式"
+        ],
+        "content": "### 方式二：关键词检索- 输入关键词自动匹配- 支持模糊搜索和精确搜索两种模式- 示例：搜索\"增值电信\"、\"教育\"、\"医疗机构\"",
+        "chunk_id": "negative_list_query_llm_004",
+        "doc_id": "negative_list_query",
+        "parent_chunk_id": "",
+        "char_count": 66,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资负面清单查询系统操作手册",
+          "查询方式"
+        ],
+        "content": "### 方式三：地区+行业组合查询- 选择省份 + 行业类别- 自由试验区内外差异对比- 显示该地区该行业的特殊限制政策",
+        "chunk_id": "negative_list_query_llm_005",
+        "doc_id": "negative_list_query",
+        "parent_chunk_id": "",
+        "char_count": 60,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资负面清单查询系统操作手册",
+          "查询结果说明"
+        ],
+        "content": "| 结果类型 | 标识 | 说明 ||----------|------|------|| 鼓励类 | ✅ | 允许外商投资，享受优惠政策 || 限制类 | ⚠️ | 有条件开放，有股比/高管要求 || 禁止类 | ❌ | 不允许外商投资 || 暂未明确 | ❓ | 需咨询相关部门确认 |",
+        "chunk_id": "negative_list_query_llm_006",
+        "doc_id": "negative_list_query",
+        "parent_chunk_id": "",
+        "char_count": 145,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资负面清单查询系统操作手册",
+          "2024年重点关注行业"
+        ],
+        "content": "1. 增值电信业务：外资股比不超过50%（基础电信禁止）2. 医疗机构：限于合资3. 教育机构：限于合作办学4. 新闻出版：禁止5. 广播电视：禁止",
+        "chunk_id": "negative_list_query_llm_007",
+        "doc_id": "negative_list_query",
+        "parent_chunk_id": "",
+        "char_count": 74,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资负面清单查询系统操作手册",
+          "常见问题"
+        ],
+        "content": "**Q: 负面清单每年什么时间更新？**A: 通常每年上半年发布新版，重大政策调整时实时更新。",
+        "chunk_id": "negative_list_query_llm_008",
+        "doc_id": "negative_list_query",
+        "parent_chunk_id": "",
+        "char_count": 47,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商投资负面清单查询系统操作手册",
+          "常见问题"
+        ],
+        "content": "**Q: 自由贸易试验区是否有特殊政策？**A: 是的，自由贸易试验区通常适用更加开放的负面清单，限制类别少于全国版。",
+        "chunk_id": "negative_list_query_llm_009",
+        "doc_id": "negative_list_query",
+        "parent_chunk_id": "",
+        "char_count": 59,
+        "is_parent": true
+      }
+    ],
+    "one_stop_service": [
+      {
+        "heading_chain": [
+          "外商一站式服务平台操作指南"
+        ],
+        "content": "外商一站式服务平台（One-Stop Service Platform, OSSP）整合了FDI部门面向外商投资企业的所有政务服务事项，实现\"一次登录、全网通办\"。平台覆盖企业设立、项目建设、运营服务、退出注销全生命周期。",
+        "chunk_id": "one_stop_service_llm_001",
+        "doc_id": "one_stop_service",
+        "parent_chunk_id": "",
+        "char_count": 111,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商一站式服务平台操作指南",
+          "服务事项清单",
+          "设立阶段（6项）"
+        ],
+        "content": "1. 企业名称预先核准 2. 外商投资企业设立备案 3. 营业执照办理 4. 税务登记 5. 外汇登记 6. 银行开户预约",
+        "chunk_id": "one_stop_service_llm_002",
+        "doc_id": "one_stop_service",
+        "parent_chunk_id": "",
+        "char_count": 61,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商一站式服务平台操作指南",
+          "服务事项清单",
+          "建设阶段（4项）"
+        ],
+        "content": "1. 项目核准/备案 2. 用地规划许可 3. 建设工程规划许可 4. 施工许可",
+        "chunk_id": "one_stop_service_llm_003",
+        "doc_id": "one_stop_service",
+        "parent_chunk_id": "",
+        "char_count": 40,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商一站式服务平台操作指南",
+          "服务事项清单",
+          "运营阶段（5项）"
+        ],
+        "content": "1. 年度报告报送 2. 变更备案 3. 优惠政策申请 4. 投诉处理 5. 外汇业务办理",
+        "chunk_id": "one_stop_service_llm_004",
+        "doc_id": "one_stop_service",
+        "parent_chunk_id": "",
+        "char_count": 45,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商一站式服务平台操作指南",
+          "服务事项清单",
+          "退出阶段（3项）"
+        ],
+        "content": "1. 企业注销预检 2. 清算组备案 3. 注销登记",
+        "chunk_id": "one_stop_service_llm_005",
+        "doc_id": "one_stop_service",
+        "parent_chunk_id": "",
+        "char_count": 26,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商一站式服务平台操作指南",
+          "特色功能",
+          "智能引导"
+        ],
+        "content": "根据企业类型和投资规模，动态生成办事流程清单，标注每个事项的预计办理时间、所需材料、线上办理入口。",
+        "chunk_id": "one_stop_service_llm_006",
+        "doc_id": "one_stop_service",
+        "parent_chunk_id": "",
+        "char_count": 49,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商一站式服务平台操作指南",
+          "特色功能",
+          "材料复用"
+        ],
+        "content": "已提交的材料自动归档，后续事项无需重复上传。系统自动识别材料有效期，过期前30天提醒更新。",
+        "chunk_id": "one_stop_service_llm_007",
+        "doc_id": "one_stop_service",
+        "parent_chunk_id": "",
+        "char_count": 45,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商一站式服务平台操作指南",
+          "特色功能",
+          "进度总览"
+        ],
+        "content": "以甘特图形式展示所有事项的办理进度，支持按事项状态筛选（未开始/进行中/已完成/已逾期）。",
+        "chunk_id": "one_stop_service_llm_008",
+        "doc_id": "one_stop_service",
+        "parent_chunk_id": "",
+        "char_count": 45,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商一站式服务平台操作指南",
+          "账户管理"
+        ],
+        "content": "- 企业首次使用需注册认证（上传营业执照进行实名认证，1个工作日内审核） - 支持设置子账户，主账户可分配不同事项权限给不同人员 - 支持CA数字证书登录和手机验证码登录两种方式",
+        "chunk_id": "one_stop_service_llm_009",
+        "doc_id": "one_stop_service",
+        "parent_chunk_id": "",
+        "char_count": 89,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外商一站式服务平台操作指南",
+          "服务承诺"
+        ],
+        "content": "- 线上事项100%可办 - 材料审核不超过2个工作日 - 投诉48小时内响应",
+        "chunk_id": "one_stop_service_llm_010",
+        "doc_id": "one_stop_service",
+        "parent_chunk_id": "",
+        "char_count": 39,
+        "is_parent": true
+      }
+    ],
+    "project_tracking": [
+      {
+        "heading_chain": [
+          "外资项目跟踪管理系统功能说明"
+        ],
+        "content": "外资项目跟踪管理系统（FDI Project Tracking System, FPTS）实现外资项目从签约意向到投产运营的全生命周期跟踪管理，覆盖项目储备、签约、审批、开工、投产五个阶段。",
+        "chunk_id": "project_tracking_llm_001",
+        "doc_id": "project_tracking",
+        "parent_chunk_id": "",
+        "char_count": 95,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外资项目跟踪管理系统功能说明",
+          "项目阶段定义",
+          "1. 储备阶段"
+        ],
+        "content": "- 有投资意向，尚未正式签约- 跟踪指标：投资方背景、意向金额、意向地区- 转化目标：转为签约项目",
+        "chunk_id": "project_tracking_llm_002",
+        "doc_id": "project_tracking",
+        "parent_chunk_id": "",
+        "char_count": 49,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外资项目跟踪管理系统功能说明",
+          "项目阶段定义",
+          "2. 签约阶段"
+        ],
+        "content": "- 双方正式签署投资协议- 系统记录签约金额、签约日期、协议期限- 签约项目自动生成唯一的项目跟踪编号（格式：PT-YYYY-XXXXX）",
+        "chunk_id": "project_tracking_llm_003",
+        "doc_id": "project_tracking",
+        "parent_chunk_id": "",
+        "char_count": 69,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外资项目跟踪管理系统功能说明",
+          "项目阶段定义",
+          "3. 审批阶段"
+        ],
+        "content": "- 项目进入政府审批流程- 跟踪各审批节点状态，自动更新审批进度- 关键节点预警：审批超时自动通知相关负责人",
+        "chunk_id": "project_tracking_llm_004",
+        "doc_id": "project_tracking",
+        "parent_chunk_id": "",
+        "char_count": 54,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外资项目跟踪管理系统功能说明",
+          "项目阶段定义",
+          "4. 开工阶段"
+        ],
+        "content": "- 获得施工许可后进入开工阶段- 记录实际开工日期、计划竣工日期- 支持月度投资完成额填报",
+        "chunk_id": "project_tracking_llm_005",
+        "doc_id": "project_tracking",
+        "parent_chunk_id": "",
+        "char_count": 45,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外资项目跟踪管理系统功能说明",
+          "项目阶段定义",
+          "5. 投产阶段"
+        ],
+        "content": "- 项目正式投产运营- 记录实际投产日期、首年产值、就业人数- 项目结束后自动归档",
+        "chunk_id": "project_tracking_llm_006",
+        "doc_id": "project_tracking",
+        "parent_chunk_id": "",
+        "char_count": 41,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外资项目跟踪管理系统功能说明",
+          "预警机制"
+        ],
+        "content": "- 签约后90天未进入审批阶段 → 黄色预警- 审批阶段超期50% → 橙色预警- 开工后进度滞后30%以上 → 红色预警",
+        "chunk_id": "project_tracking_llm_007",
+        "doc_id": "project_tracking",
+        "parent_chunk_id": "",
+        "char_count": 61,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外资项目跟踪管理系统功能说明",
+          "数据报表"
+        ],
+        "content": "系统支持自动生成以下报表：1. 项目进度总览表（实时）2. 季度投资完成情况分析3. 年度招商引资绩效统计4. 项目问题清单及处理进度",
+        "chunk_id": "project_tracking_llm_008",
+        "doc_id": "project_tracking",
+        "parent_chunk_id": "",
+        "char_count": 67,
+        "is_parent": true
+      },
+      {
+        "heading_chain": [
+          "外资项目跟踪管理系统功能说明",
+          "权限管理"
+        ],
+        "content": "- 普通用户：查看权限范围内项目信息- 项目经理：管理所负责项目，更新进度- 部门主管：查看管辖范围内所有项目- 系统管理员：全部权限，包括配置管理",
+        "chunk_id": "project_tracking_llm_009",
+        "doc_id": "project_tracking",
+        "parent_chunk_id": "",
+        "char_count": 74,
+        "is_parent": true
+      }
+    ]
+  }
+}
