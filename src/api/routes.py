@@ -148,8 +148,13 @@ async def chat(req: ChatRequest):
 
     return StreamingResponse(
         _chat_stream(session_id, req.question, history),
-        media_type="text/event-stream",
-        headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
+        media_type="text/event-stream; charset=utf-8",
+        headers={
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+            "X-Accel-Buffering": "no",
+            "Content-Type": "text/event-stream; charset=utf-8",
+        },
     )
 
 
