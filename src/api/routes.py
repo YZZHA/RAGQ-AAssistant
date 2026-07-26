@@ -82,6 +82,12 @@ async def startup():
     def _bg_init():
         _init_vector_store(chunks)
         rebuild_all_cache()
+        try:
+            logger.info("预加载 CrossEncoder 模型...")
+            _reranker._load()
+            logger.info("CrossEncoder 模型加载完成")
+        except Exception as e:
+            logger.warning("CrossEncoder 预加载失败: %s", e)
 
     threading.Thread(target=_bg_init, daemon=True).start()
 
@@ -159,6 +165,9 @@ async def chat(req: ChatRequest):
 
 
 async def _chat_stream(session_id: str, question: str, history: list):
+    # 立即发送保活信号，让浏览器知道连接已建立，避免超时断开
+    yield _sse_keepalive()
+
     add_message(session_id, "user", question)
     rewritten = rewrite_query(question, history)
     logger.info("Query: '%s' → Rewrite: '%s'", question, rewritten)
@@ -358,3 +367,7 @@ def _sse_done(sources: list, tokens_used: int, has_gap: bool = False) -> str:
 
 def _sse_error(code: str, message: str, fallback: str) -> str:
     return f"event: error\ndata: {json.dumps({'code': code, 'message': message, 'fallback': fallback}, ensure_ascii=False)}\n\n"
+
+
+def _sse_keepalive() -> str:
+    return f": keepalive\n\n"
